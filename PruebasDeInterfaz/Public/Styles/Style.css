@@ -1,0 +1,46 @@
+body{
+    margin: 0;
+    padding: 0;
+    /* display: flex; */
+}
+
+.container__tabla_principal{
+    display: block;
+/*     justify-content: center;
+    align-items: center; */
+    margin: 5vh auto;
+    border: 1px solid black;
+    width: 70vh;
+    height: 50vh;
+}
+.container__checkbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15vh auto;
+    border: 1px solid black;
+    width: 40vh;
+}
+
+.container__tablas_secundarias{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5vh auto;
+}
+
+/* Ocultamos las tablas inicialmente */
+.container__tbl_styls{
+    display: none;
+    border: 1px solid black;
+    width: 40vh;
+/*     opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease; */
+}
+/* Clase para mostrar las tablas con animación */
+/* .container__tbl_styls.mostrar {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+} */
