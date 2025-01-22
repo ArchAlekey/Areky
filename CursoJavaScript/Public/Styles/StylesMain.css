@@ -1,0 +1,57 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #3a2031;
+}
+
+.headerJS{
+    background-color: #029232;
+    width: 100%;
+    height: 5vh;
+}
+
+h1{
+    font-size: 200%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.headerJS h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.mainJS{
+    background-color: royalblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.footerJS{
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+/* RESPONSIVE */
+@media(max-width: 600px){
+    body{
+        background-color: aqua;
+
+    }
+}
+@media(min-width: 601px) and (max-width: 1024px){
+    body{
+        background-color: black;
+    }
+}
+@media (min-width: 1025px){
+    body{
+        background-color: #029232;
+    }
+}
