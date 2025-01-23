@@ -69,3 +69,8 @@ body{
 .show__container{
     display: block;
 }
+
+.btn__mostrar_tbls:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}

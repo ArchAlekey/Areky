@@ -1,13 +1,3 @@
 
-function sumar(){
-    console.log(2+2);
-}
-
-sumar();
-
-const funcionSuma = function(){
-    console.log(5+5);
-}
-
-funcionSuma();
-
+const containerBody = document-getElementByClassName('mainJS');
+console.log(containerBody);
