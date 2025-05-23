@@ -1,0 +1,101 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #2f2f2f;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.header{
+    width: 100%;
+    height: 7vh;
+    background-color: #557f9f;
+}
+.footer{
+    background-color: #dd4455;
+    width: 100%;
+    height: 5vh;
+}
+.h1-main{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 200%;
+    color: #ffffff;
+    text-align: center;
+    margin: 0;
+}
+
+.container-body{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+.container-main{
+    display: grid;
+    grid-template-columns: auto 1fr;    
+}
+.container-perfil{
+    width: 30vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #e7d6a6;
+}
+.container-foto-pefil{
+    /* border: 1px solid #ffffff; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.foto-perfil{
+    width: 70%;
+    border-radius: 100%;
+    border: #ffffff solid 3px;
+}
+.title-info{
+    font-size: 200%;
+    text-align: center;
+}
+.body-info{
+    padding: 3vh;
+    font-size: 130%;
+}
+
+.container-skills{
+    background-color: #f7f2d7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-stack-skills{
+    border: #f7f2d7 1px solid;
+    border-radius: 1rem;
+    width: 80%;
+    background-color: #e7d6a6;
+}
+.container-iconos-skills{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+}
+.container-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height:80px;
+}
+.icon{
+    width: 20%;
+    transition: all 1s;
+    cursor: pointer;
+}
+.icon:hover{
+    transform: scale(1.5);
+}
+
+/* Dialog Styles */
+.dialog-dinamic{
+    border: 1px solid #2f2f2f;
+    border-radius: 1rem;
+    background-color: #f7f2d7;
+    width: 50%;
+}
