@@ -1,5 +1,12 @@
 
 export const habilidades = {
+    info: {
+        datosP:{
+            nombre: "Alejandro Hernández Rodríguez",
+            pseudonimo: ["ArchAlekey", "Dr.Mundo", "Alekey"],
+            infoP: "Aprendiz sobre el desarrolló web full-stack y las bases de datos, además de ser un amante de la tecnología, el software y el hardware y entuciasta de los perifericos como los teclados mecanicos y ratones."
+        } 
+    },
     lengaujes: {
         "html": {lengauje: "HTML", nivel: "70%", habilidades: {
             layout: "Creación de layouts y maquetación web.",

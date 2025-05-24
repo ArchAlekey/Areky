@@ -1,16 +1,29 @@
+
 import { habilidades } from "../../data/data.js";
 
 const btnIcon = document.querySelectorAll(".icon");
 const displayDialog = document.querySelector('.dialog-dinamic');
+const displayPerfil = document.querySelector('.nombre-perfil');
+const ulPseudonimos = document.querySelector('.ul-pseudo');
 
+const nombrePerfil = document.createElement("strong");
+nombrePerfil.textContent = `${habilidades.info.datosP.nombre}`;
+displayPerfil.appendChild(nombrePerfil);
 
+ habilidades.info.datosP.pseudonimo.forEach((apodo)=>{
+    const liApodos = document.createElement("li");
+    liApodos.textContent = `${apodo}`;
+    ulPseudonimos.appendChild(liApodos);
+
+ });
+ 
 btnIcon.forEach((boton, i) =>{
     boton.addEventListener("click", (event) => {
         displayDialog.showModal();
         if(i == 0){
             displayDialog.innerHTML = `
             <h1 class="title-info">Habilidades en ${habilidades.lengaujes.html.lengauje}</h1>
-            <p>Manejo del lenguaje: ${habilidades.lengaujes.html.nivel}</p>
+            <p class="title-info">Manejo del lenguaje: ${habilidades.lengaujes.html.nivel}</p>
             <ul>
                 <li>${habilidades.lengaujes.html.habilidades.layout}</li>
                 <li>${habilidades.lengaujes.html.habilidades.forms}</li>
@@ -20,7 +33,7 @@ btnIcon.forEach((boton, i) =>{
         } else if (i == 1) {
             displayDialog.innerHTML = `
             <h1 class="title-info">Habilidades en ${habilidades.lengaujes.css.lengauje}</h1>
-            <p>Manejo del lenguaje: ${habilidades.lengaujes.css.nivel}</p>
+            <p class="title-info">Manejo del lenguaje: ${habilidades.lengaujes.css.nivel}</p>
             <ul>
                 <li>${habilidades.lengaujes.css.habilidades.grid}</li>
                 <li>${habilidades.lengaujes.css.habilidades.flex}</li>
@@ -29,7 +42,7 @@ btnIcon.forEach((boton, i) =>{
         } else if (i == 2){
             displayDialog.innerHTML = `
             <h1 class="title-info">Habilidades en ${habilidades.lengaujes.javascript.lengauje}</h1>
-            <p>Manejo del lenguaje: ${habilidades.lengaujes.javascript.nivel}</p>
+            <p class="title-info">Manejo del lenguaje: ${habilidades.lengaujes.javascript.nivel}</p>
             <ul>
                 <li>${habilidades.lengaujes.javascript.habilidades.dom}</li>
                 <li>${habilidades.lengaujes.javascript.habilidades.event}</li>
@@ -39,7 +52,7 @@ btnIcon.forEach((boton, i) =>{
         } else if (i == 3) {
             displayDialog.innerHTML = `
             <h1 class="title-info">Habilidades en ${habilidades.lengaujes.mysql.lengauje}</h1>
-            <p>Manejo del lenguaje: ${habilidades.lengaujes.mysql.nivel}</p>
+            <p class="title-info">Manejo del lenguaje: ${habilidades.lengaujes.mysql.nivel}</p>
             <ul>
                 <li>${habilidades.lengaujes.mysql.habilidades.dbStruct}</li>
                 <li>${habilidades.lengaujes.mysql.habilidades.dbSPD}</li>
@@ -48,7 +61,7 @@ btnIcon.forEach((boton, i) =>{
         } else if(i == 4){
             displayDialog.innerHTML = `
             <h1 class="title-info">Habilidades en ${habilidades.herramientas.git.herramienta}</h1>
-            <p>Manejo del lenguaje: ${habilidades.herramientas.git.nivel}</p>
+            <p class="title-info">Manejo del lenguaje: ${habilidades.herramientas.git.nivel}</p>
             <ul>
                 <li>${habilidades.herramientas.git.habilidades.init}</li>
                 <li>${habilidades.herramientas.git.habilidades.basic}</li>
@@ -58,7 +71,7 @@ btnIcon.forEach((boton, i) =>{
         } else if(i == 5){
             displayDialog.innerHTML = `
             <h1 class="title-info">Habilidades en ${habilidades.herramientas.github.herramienta}</h1>
-            <p>Manejo del lenguaje: ${habilidades.herramientas.git.nivel}</p>
+            <p class="title-info">Manejo del lenguaje: ${habilidades.herramientas.git.nivel}</p>
             <ul>
                 <li>${habilidades.herramientas.github.habilidades.repo}</li>
                 <li>${habilidades.herramientas.github.habilidades.merge}</li>
