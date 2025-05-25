@@ -4,6 +4,12 @@ body{
     background-color: #2f2f2f;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+a {
+  all: unset;
+  /* Opcional: convierte el enlace en un elemento de bloque o inline */
+  display: inline;
+}
+
 .container-body{
     display: grid;
     grid-template-rows: auto 1fr auto;
@@ -14,13 +20,13 @@ body{
     width: 100%;
     height: 7vh;
     background-color: #1f3e2d;
-    border-bottom: #2f2f2f 0.5px solid;
+    border-bottom: #2f2f2f 2px solid;
 }
 .footer{
     background-color: #5c2627;
     width: 100%;
     height: 5vh;
-    border-top: #2f2f2f solid 0.5px;
+    border-top: #2f2f2f solid 2px;
 }
 .h1-main{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -33,12 +39,13 @@ body{
     display: grid;
     grid-template-columns: auto 1fr;    
 }
+/* Estilos sección perfil */
 .container-perfil{
     width: 30vw;
     display: grid;
     grid-template-columns: 1fr;
     background-color: #97742a;
-    border-right: #2f2f2f solid 0.5px;
+    border-right: #2f2f2f solid 2px;
 }
 .container-foto-pefil{
     /* border: 1px solid #ffffff; */
@@ -58,9 +65,20 @@ body{
 }
 .body-info{
     padding: 3vh;
-    font-size: 130%;
+    font-size: 150%;
+    text-align: center;
+}
+.container-contacto{
+    font-size: 140%;
 }
 
+.li-contacto{
+    margin: 15px;
+    font-size: 120%;
+}
+/* Termino estilos sección perfil */
+
+/* Estilos para seccion de información profesional */
 .container-skills{
     background-color: #dad0ae;
     display: grid;
@@ -94,7 +112,6 @@ body{
 .container-dinamic{
     display: grid;
     justify-items: center;
-    grid-template-rows: repeat(4, 30vh);
     border-radius: 1rem;
     width: 50vw;
 }
@@ -103,20 +120,25 @@ body{
     border: #f7f2d7 1px solid;
     border-radius: 1rem;
     width: 80%;
-    height: 30vh;
+    height: 35vh;
+    transition: all 1s;
+    color: #dad0ae;
 }
 .container-experience{
+    display: grid;
+    grid-template-rows: auto 1fr;
     background-color: #1f3e2d;
     border: #f7f2d7 1px solid;
     border-radius: 1rem;
     width: 80%;
-    height: 30vh;
+    height: auto;
+    transition: all 1s;
 }
 .container-stack-skills{
     border: #f7f2d7 1px solid;
     border-radius: 1rem;
-    width: 80%;
-    height: 30vh;
+    width: 90%;
+    height: auto;
     background-color: #1f3e2d;
 }
 .container-iconos-skills{
@@ -143,8 +165,44 @@ body{
     background-color: #1f3e2d;
     border: #f7f2d7 1px solid;
     border-radius: 1rem;
-    width: 80%;
-    height: 30vh;
+    width: 120%;
+    height: auto;
+}
+.img-portada{
+    width: 50vh;
+    border-radius: 2rem;
+    transition: all 1s 1.5s;
+}
+.img-portada:hover{
+    transform: scale(1.6);
+}
+.icon-github{
+    font-size: 250%;
+    cursor: pointer;
+    color: #dad0ae;
+}
+
+.controlEscolar{
+    display: grid;
+    grid-template-rows: 1fr auto 1fr;
+}
+.controlEscolar-desc{
+    font-size: 150%;
+    margin: auto 5vh;
+    color: #dad0ae;
+}
+.controlEscolar-list{
+    font-size: 140%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    color: #dad0ae;
+}
+.controlEscolar-img{
+    display: grid;
+    grid-template-rows: 1fr auto;
+    justify-items: center;
+    gap: 24px;
+    margin-bottom: 10px;
 }
 /* Dialog Styles */
 .dialog-dinamic{

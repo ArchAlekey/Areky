@@ -3,8 +3,9 @@ export const habilidades = {
     info: {
         datosP:{
             nombre: "Alejandro Hernández Rodríguez",
-            pseudonimo: ["ArchAlekey", "Dr.Mundo", "Alekey"],
-            infoP: "Aprendiz sobre el desarrolló web full-stack y las bases de datos, además de ser un amante de la tecnología, el software y el hardware y entuciasta de los perifericos como los teclados mecanicos y ratones."
+            ocupacion: "Desarrollador Web Full Stack",
+            contacto: ["5622068728", "alexmetal2001@gmail.com", "ArchAlekey/Dr Mundo"],
+            infoP: "Entusiasta sobre el desarrolló web Front-end y aprendiz en desarrolló Backend, desarrollador de bases de datos SQL en diferentes motores de base de datos, además de ser un amante de la tecnología, el software, el hardware y entuciasta de los perifericos como los teclados mecanicos y ratones."
         } 
     },
     lengaujes: {
@@ -41,5 +42,17 @@ export const habilidades = {
             repo: "Entendido del funcionamiento de repositorios en github.",
             merge: "Gestión de pull request y merge dentro de algún proyecto."
         }}
-    }
+    },
+/*     proyectos: [
+        "controlEscolar": [
+            nombre: "Control Escolar",
+            tipoProyecto: "Aplicación web en MVC enfocada a servicios Rest",
+            detalles: ""
+        ],
+        acaVendes:{
+            nombre: "Aca-Vendes",
+            tipoProyecto: "Aplicación de ventas para la comunidad estudiantil de las universidades",
+            detalles: ""
+        },
+    ] */
 }

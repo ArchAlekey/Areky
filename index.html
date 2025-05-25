@@ -16,14 +16,13 @@
         <main class="container-main">
             <div class="container-perfil">
                 <div class="container-foto-pefil">
-                    <img src="/assets/Profile.jpeg" alt="Profile" class="foto-perfil">
+                    <img src="assets/Profile.jpeg" alt="Profile" class="foto-perfil">
                 </div>
                 <div class="container-info">
                     <p class="title-info nombre-perfil"></p>
-                    <div class="container-pseudo">
-                        <p class="body-info">Pseudonimos:</p>
-                        <ul class="ul-pseudo">
-
+                    <div class="container-contacto">
+                        <p class="body-info">Contactame aquí:</p>
+                        <ul class="ul-contacto">
                         </ul>
                     </div>
                 </div>
@@ -36,25 +35,62 @@
                     <div class="icon-nav"><i class="fa-solid fa-folder-open"></i></div>
                 </div>
                 <div class="container-dinamic">
-                    <div class="container-iam hidden">
-                        
+                    <div class="container-iam">
+                        <p class="title-info" style="color: #dad0ae;"><strong>¿Quien soy yo?</strong></p>
                     </div>
                     <div class="container-experience hidden">
-
+                        <p class="title-info" style="color: #dad0ae;"><strong>Mi experiencia laborla</strong></p>
+                        <ul style="color: #dad0ae; font-size: 160%; margin: 5vh;">
+                            <li>Servicio social desempeñado en el departamento de sistemas de la información de la Facultad de Estudios Superiores Acatlán</li>
+                            <li>Diseñó e implementación de una base de datos en SQL Server para sistemas escolares de la Fes Acatlán</li>
+                            <li>Restauración de backups de bases de datos a travéz de un CLI</li>
+                            <li>Diseñó e implementación de procedimientos almacenados y funciones en SQL Server y Oracle</li>
+                            <li>Implementación de ambientes de trabajo para el lenguaje C# y el framework asp.net</li>
+                            <li>Desarrolló total del sistema "Control Escolar"</li>
+                        </ul>
                     </div>
-                    <div class="container-stack-skills ">
+                    <div class="container-stack-skills hidden">
                         <p class="title-info" style="color: #dad0ae;">Mi stack de habilidades</p>
                             <div class="container-iconos-skills ">
-                                <div class="container-icon"><img class="icon" id="html" src="/assets/icons/html.webp" alt="html"></div>
-                                <div class="container-icon"><img class="icon" id="css" src="/assets/icons/css.svg" alt="css"></div>
-                                <div class="container-icon"><img class="icon" id="js" src="/assets/icons/JavaScript.png" alt="js"></div>
-                                <div class="container-icon"><img class="icon" id="mysql" src="/assets/icons/mysql.png" alt="mysql"></div>
-                                <div class="container-icon"><img class="icon" id="git" src="/assets/icons/git.webp" alt="git"></div>
-                                <div class="container-icon"><img class="icon" id="github" src="/assets/icons/github.png" alt="github"></div>
+                                <div class="container-icon"><img class="icon" id="html" src="assets/icons/html.webp" alt="html"></div>
+                                <div class="container-icon"><img class="icon" id="css" src="assets/icons/css.svg" alt="css"></div>
+                                <div class="container-icon"><img class="icon" id="js" src="assets/icons/JavaScript.png" alt="js"></div>
+                                <div class="container-icon"><img class="icon" id="mysql" src="assets/icons/mysql.png" alt="mysql"></div>
+                                <div class="container-icon"><img class="icon" id="git" src="assets/icons/git.webp" alt="git"></div>
+                                <div class="container-icon"><img class="icon" id="github" src="assets/icons/github.png" alt="github"></div>
                             </div>
                     </div>
                     <div class="container-projects hidden">
-                        
+                        <p class="title-info" style="color: #dad0ae;"><strong>Mis Proyectos</strong></p>
+                        <div class="controlEscolar">
+                            <div class="controlEscolar-desc">
+                                <h2>Control Escolar</h2>
+                                <p>Descripción:</p>
+                                <p>Sistema de control academico para alumnos, profesores y jefes de carreras con gestión de horarios, inscripciones, calificaciones e historial academico a travéz de la generación de archivos pdf.</p>
+                            </div>
+                            <div class="controlEscolar-list">
+                                <ul>
+                                    Lengaujes utilizadas
+                                    <li>Mysql</li>
+                                    <li>Java - Springboot</li>
+                                    <li>React - Vite</li>
+                                </ul>
+                                <ul>
+                                    Herramientas utilizadas
+                                    <li>Git</li>
+                                    <li>Github</li>
+                                    <li>Postman</li>
+                                    <li>Clevercloud</li>
+                                </ul>
+                            </div>
+                            <div class="controlEscolar-img">
+                                <img src="assets/img/controlEscolar.png" alt="ControlEscolar" class="img-portada">
+                                <div class="icon-github">
+                                    <label>Repositorio</label>
+                                    <a href="https://github.com/ArchAlekey/ControlEscolar.git" target="_blank"><i class="fa-brands fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="container-dialog">
@@ -66,6 +102,6 @@
         </main>
         <footer class="footer"></footer>
     </div>
-    <script type="module" src="/public/js/main.js"></script>
+    <script type="module" src="public/js/main.js"></script>
 </body>
 </html>
